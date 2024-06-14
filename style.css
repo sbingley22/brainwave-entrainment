@@ -1,0 +1,162 @@
+:root {
+  --bg-color-1: #ff0000;
+  --bg-color-2: #ff9100;
+}
+
+body {
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+#app {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.options-menu {
+  display: none;
+}
+
+.show-menu {
+  display: block !important;
+}
+
+.hz-selector {
+  display: flex;
+  background-color: rgb(47, 47, 47);
+  color: white;
+}
+
+.hz-button {
+  flex: auto;
+  margin: 5px;
+  background-color: black;
+  color: white;
+  border-radius: 10%;
+  border: 2px gray solid;
+  cursor: pointer;
+}
+
+.hz-button.selected {
+  border-color: white;
+}
+
+.color-selector {
+  display: flex;
+  align-items: center;
+  background-color: rgb(47, 47, 47);
+  color: white;
+}
+
+.color-input {
+  flex: auto;
+  margin: 5px;
+  padding: 10px;
+  margin-right: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#colorPicker1 {
+  background-color: var(--bg-color-1);
+}
+
+#colorPicker2 {
+  background-color: var(--bg-color-2);
+}
+
+.strobe {
+  /* -webkit-animation: alpha 1s infinite; */
+  animation: theta 1s infinite;
+  background-color: var(--bg-color-1);
+}
+
+/* 20Hz */
+@keyframes beta {
+  2.5% {background-color: var(--bg-color-2);}
+  5% {background-color: var(--bg-color-1);}
+  7.5% {background-color: var(--bg-color-2);}
+  10% {background-color: var(--bg-color-1);}
+  12.5% {background-color: var(--bg-color-2);}
+  15% {background-color: var(--bg-color-1);}
+  17.5% {background-color: var(--bg-color-2);}
+  20% {background-color: var(--bg-color-1);}
+  22.5% {background-color: var(--bg-color-2);}
+  25% {background-color: var(--bg-color-1);}
+  27.5% {background-color: var(--bg-color-2);}
+  30% {background-color: var(--bg-color-1);}
+  32.5% {background-color: var(--bg-color-2);}
+  35% {background-color: var(--bg-color-1);}
+  37.5% {background-color: var(--bg-color-2);}
+  40% {background-color: var(--bg-color-1);}
+  42.5% {background-color: var(--bg-color-2);}
+  45% {background-color: var(--bg-color-1);}
+  47.5% {background-color: var(--bg-color-2);}
+  50% {background-color: var(--bg-color-1);}
+  52.5% {background-color: var(--bg-color-2);}
+  55% {background-color: var(--bg-color-1);}
+  57.5% {background-color: var(--bg-color-2);}
+  60% {background-color: var(--bg-color-1);}
+  62.5% {background-color: var(--bg-color-2);}
+  65% {background-color: var(--bg-color-1);}
+  67.5% {background-color: var(--bg-color-2);}
+  70% {background-color: var(--bg-color-1);}
+  72.5% {background-color: var(--bg-color-2);}
+  75% {background-color: var(--bg-color-1);}
+  77.5% {background-color: var(--bg-color-2);}
+  80% {background-color: var(--bg-color-1);}
+  82.5% {background-color: var(--bg-color-2);}
+  85% {background-color: var(--bg-color-1);}
+  87.5% {background-color: var(--bg-color-2);}
+  90% {background-color: var(--bg-color-1);}
+  92.5% {background-color: var(--bg-color-2);}
+  95% {background-color: var(--bg-color-1);}
+  97.5% {background-color: var(--bg-color-2);}
+  100% {background-color: var(--bg-color-1);}
+}
+
+/* 10Hz */
+@keyframes alpha { 
+  5% {background-color: var(--bg-color-2);}
+  10% {background-color: var(--bg-color-1);}
+  15% {background-color: var(--bg-color-2);}
+  20% {background-color: var(--bg-color-1);}
+  25% {background-color: var(--bg-color-2);}
+  30% {background-color: var(--bg-color-1);}
+  35% {background-color: var(--bg-color-2);}
+  40% {background-color: var(--bg-color-1);}
+  45% {background-color: var(--bg-color-2);}
+  50% {background-color: var(--bg-color-1);}
+  55% {background-color: var(--bg-color-2);}
+  60% {background-color: var(--bg-color-1);}
+  65% {background-color: var(--bg-color-2);}
+  70% {background-color: var(--bg-color-1);}
+  75% {background-color: var(--bg-color-2);}
+  80% {background-color: var(--bg-color-1);}
+  85% {background-color: var(--bg-color-2);}
+  90% {background-color: var(--bg-color-1);}
+  95% {background-color: var(--bg-color-2);}
+  100% {background-color: var(--bg-color-1);}
+}
+/* @-webkit-keyframes alpha {
+5% {background-color: var(--bg-color-2);}
+} */
+
+/* 5Hz */
+@keyframes theta {
+  10% {background-color: var(--bg-color-2);}
+  20% {background-color: var(--bg-color-1);}
+  30% {background-color: var(--bg-color-2);}
+  40% {background-color: var(--bg-color-1);}
+  50% {background-color: var(--bg-color-2);}
+  60% {background-color: var(--bg-color-1);}
+  70% {background-color: var(--bg-color-2);}
+  80% {background-color: var(--bg-color-1);}
+  90% {background-color: var(--bg-color-2);}
+  100% {background-color: var(--bg-color-1);}
+}

@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brainwave Entrainment</title>
+  </head>
+  <body>
+    <div id="app" class="strobe">
+      <div class="options-menu">
+        <div class="hz-selector">
+          <button id="betaButton" class="hz-button">Beta 20Hz</button>
+          <button id="alphaButton" class="hz-button">Alpha 10Hz</button>
+          <button id="thetaButton" class="hz-button selected">Theta 5Hz</button>
+        </div>
+        <div class="color-selector">
+          <label for="colorPicker1">Color 1</label>
+          <input type="color" id="colorPicker1" class="color-input">
+          <label for="colorPicker2">Color 2</label>
+          <input type="color" id="colorPicker2" class="color-input">
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
